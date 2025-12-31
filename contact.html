@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact</title>
+  <meta name="description" content="Contact Your Name." />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-text">Balaji Ramesh</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav-link" href="index.html">Info</a>
+        <a class="nav-link" href="projects.html">Projects</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <button class="nav-chip" id="themeToggle" type="button">
+          Light
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container contact-grid">
+        <div>
+          <h1 class="page-title">Contact</h1>
+          <p class="section-subtitle">
+            Feel free to email me at the below addresses to get in touch!
+          </p>
+
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-title">Email</h2>
+              <p class="card-kicker">Direct</p>
+            </div>
+            <div class="card-body">
+              <div class="contact-row">
+                <div>
+                  <p class="label">Personal</p>
+                  <p class="value">
+                    <a class="link" href="mailto:balaji.ramesh03@gmail.com">balaji.ramesh03@gmail.com</a>
+                  </p>
+                </div>
+                <button class="btn btn-ghost" type="button" data-copy="balaji.ramesh03@gmail.com">Copy</button>
+              </div>
+
+              <div class="contact-row" style="margin-top: 12px;">
+                <div>
+                  <p class="label">McGill</p>
+                  <p class="value">
+                    <a class="link" href="mailto:balaji.ramesh@mail.mcgill.ca">balaji.ramesh@mail.mcgill.ca</a>
+                  </p>
+                </div>
+                <button class="btn btn-ghost" type="button" data-copy="balaji.ramesh@mail.mcgill.ca">Copy</button>
+              </div>
+
+              <p class="hint" id="copyToast" role="status" aria-live="polite" hidden>Copied!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">Links</h2>
+          </div>
+          <div class="card-body links-grid">
+            <a class="link-tile" href="https://github.com/balaji025" target="_blank" rel="noreferrer">
+              <span class="tile-top">GitHub</span>
+            </a>
+            <a class="link-tile" href="https://www.linkedin.com/in/balaji-ramesh-02bbb8180/" target="_blank" rel="noreferrer">
+              <span class="tile-top">LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cv-center">
+      <div class="card card-glow">
+        <div class="card-header">
+          <h2 class="card-title">Curriculum Vitae</h2>
+          <p class="card-kicker">Download</p>
+        </div>
+        <div class="card-body">
+          <p class="muted">
+            A concise overview of my experience, projects, and technical skills.
+          </p>
+
+          <a class="btn" href="assets/Balaji_Ramesh_CV.pdf" target="_blank" rel="noreferrer">
+            View CV (PDF)
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="brand-mark small">∞</span>
+        <span class="footer-text">© <span id="year"></span> Balaji Ramesh</span>
+      </div>
+      <div class="footer-right">
+        <a class="footer-link" href="index.html">Info</a>
+        <a class="footer-link" href="projects.html">Projects</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

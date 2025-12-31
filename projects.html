@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects</title>
+  <meta name="description" content="Projects by Your Name." />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-text">Balaji Ramesh</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav-link" href="index.html">Info</a>
+        <a class="nav-link" href="projects.html">Projects</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <button class="nav-chip" id="themeToggle" type="button">
+          Light
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h1 class="page-title">Projects</h1>
+        </div>
+
+        <!--
+        <div class="toolbar">
+          <input class="input" id="projectSearch" type="search" placeholder="Search projects (e.g., NLP, CV, Flask)..." />
+          <select class="select" id="projectFilter" aria-label="Filter projects by category">
+            <option value="all">All</option>
+            <option value="ml">Machine Learning</option>
+            <option value="nlp">NLP</option>
+            <option value="cv">Computer Vision</option>
+            <option value="web">Web / Systems</option>
+          </select>
+        </div>
+        -->
+
+
+
+
+        <div class="grid grid-3" id="projectsGrid">
+          <article class="card hoverlift project-card" data-tags="ml nlp">
+            <div class="card-header">
+              <h2 class="card-title">Minimal-Context Stress Tests of Figurative Reasoning in LLMs</h2>
+              <p class="card-kicker">NLP · Evaluation</p>
+            </div>
+            <div class="card-body">
+              <p>
+                Built a curated benchmark to stress-test how large language models interpret figurative language under minimal context.
+                Developed a data pipeline to extract high-ambiguity idioms from MAGPIE, implemented probabilistic and free-generation
+                evaluation methods, and compared multiple LLMs against human performance. The project analyzes prompting strategies,
+                in-context learning, and extraction techniques to reveal systematic reasoning failures and performance gaps.
+              </p>
+              <div class="tags">
+                <span class="tag">Python</span><span class="tag">LLMs</span><span class="tag">Metrics</span>
+              </div>
+              <div class="card-actions">
+                <a class="link" href="https://github.com/balaji025/COMP545_Project_Code" target="_blank" rel="noreferrer">GitHub →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card hoverlift project-card" data-tags="web">
+            <div class="card-header">
+              <h2 class="card-title">IPL Analytics</h2>
+              <p class="card-kicker">Web · Data</p>
+            </div>
+            <div class="card-body">
+              <p>
+                IPL Analytics is a full-stack web application that presents interactive statistics and insights from the Indian Premier League (IPL), 
+                covering all seasons up to 2023. The project features a Flask-based backend that processes and serves IPL data through RESTful APIs, 
+                and a Node.js-based frontend that visualizes team-wise and player-wise performance in a clean, user-friendly interface. 
+                Designed for cricket enthusiasts and data-driven analysis, the platform demonstrates end-to-end web development, API integration, 
+                and sports analytics using real-world datasets.
+              </p>
+              <div class="tags">
+                <span class="tag">Flask</span><span class="tag">Full-stack</span><span class="tag">CSS</span>
+              </div>
+              <div class="card-actions">
+                <a class="link" href="https://balajiramesh2003.pythonanywhere.com/index" target="_blank" rel="noreferrer">Demo →</a>
+                <a class="link" href="https://github.com/balaji025/IPL_ANALYTICS#" target="_blank" rel="noreferrer">GitHub →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card hoverlift project-card" data-tags="ml cv">
+            <div class="card-header">
+              <h2 class="card-title">Video-based cricket-shot Classification using Modified LRCN approach</h2>
+              <p class="card-kicker">Deep Learning · Tuning</p>
+            </div>
+            <div class="card-body">
+              <p>
+                Developed a deep learning model for cricket shot classification from video using a modified LRCN architecture that
+                combines CNN and LSTM layers to capture spatial and temporal features. The model achieved up to 95% accuracy and was
+                presented at the IEEE SILCON 2024 conference held at NIT Agartala.
+              </p>
+              <div class="tags">
+                <span class="tag">LSTM</span><span class="tag">CNN</span><span class="tag">Hyper-parameter Tuning</span>
+              </div>
+              <div class="card-actions">
+                <a class="link" href="https://github.com/balaji025/Video-based-cricket-shot-classification-using-modified-LRCN-approach" target="_blank" rel="noreferrer">GitHub →</a>
+                <a class="link" href="https://ieeexplore.ieee.org/abstract/document/10910682" target="_blank" rel="noreferrer">Paper →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+
+
+
+
+
+        <div class="grid grid-3" id="projectsGrid">
+          <!-- Card -->
+          <article class="card hoverlift project-card" data-tags="cyber-security">
+            <div class="card-header">
+              <h2 class="card-title">Hybrid-Lightweight-Cryptography-for-Data-Security</h2>
+              <p class="card-kicker">Cryptography · Evaluation</p>
+            </div>
+            <div class="card-body">
+              <p>
+                Designed and implemented an improved hybrid cryptographic scheme by integrating dynamic RSA with ASCON lightweight
+                cryptography to enhance security and efficiency. Built the full algorithmic pipeline in Python and validated its
+                performance through experimental evaluation. This work was peer-reviewed, presented at the 5th International
+                Conference on Communication, Computing & Industry 6.0 (C2I6-2024), and published in IEEE Xplore.
+              </p>
+              <div class="tags">
+                <span class="tag">Cryptography</span><span class="tag">RSA</span><span class="tag">Metrics</span>
+              </div>
+              <div class="card-actions">
+                <a class="link" href="https://github.com/balaji025/Hybrid-Lightweight-Cryptography-for-Data-Security" target="_blank" rel="noreferrer">GitHub →</a>
+                <a class="link" href="https://ieeexplore.ieee.org/document/10895892" target="_blank" rel="noreferrer">Paper →</a>
+                <a class="link" href="https://balajiramesh03.pythonanywhere.com/" target="_blank" rel="noreferrer">Demo →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card hoverlift project-card" data-tags="Game">
+            <div class="card-header">
+              <h2 class="card-title">Someone's adventure</h2>
+              <p class="card-kicker">Game · DB management</p>
+            </div>
+            <div class="card-body">
+              <p>
+                A platformer game created using python and the pygame module. Consists of 5 different levels with increasing difficulty. 
+                Also has some special faetures like trap doors and teleports. It has different soundtracks that is played at different 
+                times such as for in-game, while in menus, etc. 
+                The game also has a users database which stores the progress and scores of players along with their login information.
+              </p>
+              <div class="tags">
+                <span class="tag">pyGame</span><span class="tag">Python</span><span class="tag">CSS</span>
+              </div>
+              <div class="card-actions">
+                <a class="link" href="https://github.com/balaji025/Someones-adventure" target="_blank" rel="noreferrer">GitHub →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card hoverlift project-card" data-tags="mobile dev">
+            <div class="card-header">
+              <h2 class="card-title">Find my Device</h2>
+              <p class="card-kicker">Java · Android</p>
+            </div>
+            <div class="card-body">
+              <p>
+                Built an Android application that connects users’ phones to Bluetooth-enabled Find-Me Tags for locating and securing
+                personal belongings. Implemented device discovery, pairing, and bonding workflows using the Android SDK and core
+                Bluetooth APIs, with a clean, user-friendly interface and real-time connection feedback.
+              </p>
+              <div class="tags">
+                <span class="tag">Java</span><span class="tag">Android</span><span class="tag">Mobile dev</span>
+              </div>
+              <div class="card-actions">
+                <a class="link" href="https://github.com/balaji025/Find-My-Device-Internship-project" target="_blank" rel="noreferrer">GitHub →</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="brand-mark small">∞</span>
+        <span class="footer-text">© <span id="year"></span> Balaji Ramesh</span>
+      </div>
+      <div class="footer-right">
+        <a class="footer-link" href="index.html">Info</a>
+        <a class="footer-link" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

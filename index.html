@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Balaji Ramesh</title>
+  <meta name="description" content="Portfolio website of Your Name." />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-text">Balaji Ramesh</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav-link" href="index.html">Info</a>
+        <a class="nav-link" href="projects.html">Projects</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <button class="nav-chip" id="themeToggle" type="button">
+          Light
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="marquee" role="region" aria-label="Scrolling tagline">
+    <div class="marquee-track" data-marquee>
+      <span>Machine Learning · Natural Language Processing · Software Engineering ·</span>
+      <span>Deep Learning · Mobile Application Development · Cyber Security ·</span>
+      <!--
+      <span>RESEARCH · ML · SOFTWARE ·</span>
+      <span>RESEARCH · ML · SOFTWARE ·</span>
+      -->
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+            <p class="eyebrow">Portfolio</p>
+
+            <div class="hero-image-wrap">
+                <img
+                src="imagee.jpeg"
+                alt="Balaji Ramesh"
+                class="hero-image"
+                />
+            </div>
+
+            <p class="hero-subtitle">
+                Hey there! I'm <strong>Balaji Ramesh</strong>, originally from the coastal city of
+                Chennai in southern India. I enjoy exploring new places, playing
+                badminton, going on hikes, and watching anime.
+            </p>
+
+            <div class="cta-row">
+                <a class="btn" href="projects.html">View Projects</a>
+                <a class="btn btn-ghost" href="contact.html">Get in Touch</a>
+            </div>
+
+            <div class="meta-row">
+                <div class="pill">
+                <span class="pill-label">Location</span>
+                <span class="pill-value">Montreal, Canada</span>
+                </div>
+
+                <div class="pill">
+                <span class="pill-label">Education</span>
+                <span class="pill-value">MSc CS @ McGill University</span>
+                </div>
+
+                <div class="pill">
+                <span class="pill-label">Focus</span>
+                <span class="pill-value">ML · NLP · DL · Software Dev</span>
+                </div>
+            </div>
+        </div>
+
+
+        <aside class="hero-right">
+          <div class="card card-glow">
+            <div class="card-header">
+              <h2 class="card-title">About</h2>
+            </div>
+            <div class="card-body">
+              <p>
+                I am a Master’s student in Computer Science at McGill University with a strong focus on machine learning
+                and software engineering. I enjoy building reliable, scalable systems and applying ML to real-world
+                problems. I am actively seeking software engineering and machine learning
+                internships where I can contribute to high-impact teams while continuing to grow as an engineer.
+              </p>
+
+              <ul class="mini-list">
+                <li><span>Currently:</span> Graduate student @ McGill University </li>
+                <li><span>Interests:</span> Machine Learning, Deep Learning, LLMs, data pipelines, UI</li>
+                <li><span>Tools:</span> Python · PyTorch · TensorFlow · Scikit-learn · NumPy · Pandas · SQL · Flask</li>
+              </ul>
+              <div class="card-actions">
+                <a class="link" href="projects.html">See highlighted work →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Links</h2>
+            </div>
+
+            <div class="card-body links-grid">
+                <a class="link-tile" href="https://github.com/balaji025" target="_blank" rel="noreferrer">
+                <span class="tile-top">GitHub</span>
+                </a>
+
+                <a class="link-tile" href="https://www.linkedin.com/in/balaji-ramesh-02bbb8180/" target="_blank" rel="noreferrer">
+                <span class="tile-top">LinkedIn</span>
+                </a>
+
+                <a class="link-tile" href="https://scholar.google.ca/citations?user=zZrQZvwAAAAJ&hl=en" target="_blank" rel="noreferrer">
+                <span class="tile-top">Google Scholar</span>
+                </a>
+
+                <a class="link-tile" href="https://leetcode.com/u/user2866id/" target="_blank" rel="noreferrer">
+                <span class="tile-top">LeetCode</span>
+                </a>
+
+                <a class="link-tile" href="https://leetcode.com/u/user2866id/" target="_blank" rel="noreferrer">
+                <span class="tile-top">CV</span>
+                </a>
+            </div>
+          </div>
+
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Recent Work</h2>
+          <p class="section-subtitle">A few things I have done recently.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card hoverlift">
+            <div class="card-header">
+              <h3 class="card-title">Minimal-Context Stress Tests of Figurative Reasoning in LLMs</h3>
+              <p class="card-kicker">NLP · Evaluation</p>
+            </div>
+            <div class="card-body">
+              <p>
+                Built a curated benchmark to stress-test how large language models interpret figurative language under minimal context.
+                Developed a data pipeline to extract high-ambiguity idioms from MAGPIE, implemented probabilistic and free-generation
+                evaluation methods, and compared multiple LLMs against human performance. The project analyzes prompting strategies,
+                in-context learning, and extraction techniques to reveal systematic reasoning failures and performance gaps.
+              </p>
+              <div class="tags">
+                <span class="tag">Python</span><span class="tag">LLMs</span><span class="tag">Metrics</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card hoverlift">
+            <div class="card-header">
+              <h3 class="card-title">IPL Analytics</h3>
+              <p class="card-kicker">Full-stack · Data</p>
+            </div>
+            <div class="card-body">
+              <p>
+                IPL Analytics is a full-stack web application that presents interactive statistics and insights from the Indian Premier League (IPL), 
+                covering all seasons up to 2023. The project features a Flask-based backend that processes and serves IPL data through RESTful APIs, 
+                and a Node.js-based frontend that visualizes team-wise and player-wise performance in a clean, user-friendly interface. 
+                Designed for cricket enthusiasts and data-driven analysis, the platform demonstrates end-to-end web development, API integration, 
+                and sports analytics using real-world datasets.
+              </p>
+              <div class="tags">
+                <span class="tag">JS</span><span class="tag">Flask</span><span class="tag">SQL</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card hoverlift">
+            <div class="card-header">
+              <h3 class="card-title">Video-based cricket-shot classification using modified LRCN approach</h3>
+              <p class="card-kicker">CV · Deployment</p>
+            </div>
+            <div class="card-body">
+              <p>
+                Developed a deep learning model for cricket shot classification from video using a modified LRCN architecture that
+                combines CNN and LSTM layers to capture spatial and temporal features. The model achieved up to 95% accuracy and was
+                presented at the IEEE SILCON 2024 conference held at NIT Agartala.
+              </p>
+              <div class="tags">
+                <span class="tag">LSTM</span><span class="tag">CNN</span><span class="tag">Hyper-parameter Tuning</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="brand-mark small">∞</span>
+        <span class="footer-text"> © <span id="year"></span> Balaji Ramesh </span>
+      </div>
+      <div class="footer-right">
+        <a class="footer-link" href="contact.html">Contact</a>
+        <a class="footer-link" href="projects.html">Projects</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
