@@ -3,119 +3,99 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contact</title>
-  <meta name="description" content="Contact Your Name." />
+  <title>Contact · Balaji Ramesh</title>
+  <meta name="description" content="Get in touch with Balaji Ramesh." />
+  <script>
+    document.documentElement.classList.add("js");
+    try { document.documentElement.dataset.theme = localStorage.getItem("theme") === "light" ? "light" : "dark"; }
+    catch (e) { document.documentElement.dataset.theme = "dark"; }
+  </script>
   <link rel="stylesheet" href="styles.css" />
+  <script defer src="data.js"></script>
   <script defer src="script.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Home">
-        <span class="brand-text">Balaji Ramesh</span>
+      <a class="brand" href="index.html" aria-label="Balaji Ramesh — Home">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>Balaji Ramesh</span>
       </a>
-
       <nav class="nav" aria-label="Primary">
-        <a class="nav-link" href="index.html">Info</a>
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="experience.html">Experience</a>
         <a class="nav-link" href="projects.html">Projects</a>
         <a class="nav-link" href="contact.html">Contact</a>
-        <button class="nav-chip" id="themeToggle" type="button">
-          Light
-        </button>
+        <button class="nav-chip" id="themeToggle" type="button">Light</button>
       </nav>
     </div>
   </header>
 
   <main id="main">
     <section class="section">
-      <div class="container contact-grid">
-        <div>
-          <h1 class="page-title">Contact</h1>
-          <p class="section-subtitle">
-            Feel free to email me at the below addresses to get in touch!
-          </p>
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h1 class="page-title">Let's talk</h1>
+            <p class="section-subtitle">The quickest way to reach me is email. I'm graduating in December 2026 and open to full-time roles across Canada.</p>
+          </div>
+        </div>
 
-          <div class="card">
+        <div class="contact-grid">
+          <div class="card reveal" style="--i:1">
             <div class="card-header">
-              <h2 class="card-title">Email</h2>
               <p class="card-kicker">Direct</p>
+              <h2 class="card-title">Email</h2>
             </div>
             <div class="card-body">
               <div class="contact-row">
                 <div>
                   <p class="label">Personal</p>
-                  <p class="value">
-                    <a class="link" href="mailto:balaji.ramesh03@gmail.com">balaji.ramesh03@gmail.com</a>
-                  </p>
+                  <p class="value"><a class="link" href="mailto:balaji.ramesh03@gmail.com">balaji.ramesh03@gmail.com</a></p>
                 </div>
-                <button class="btn btn-ghost" type="button" data-copy="balaji.ramesh03@gmail.com">Copy</button>
+                <button class="btn" type="button" data-copy="balaji.ramesh03@gmail.com">Copy</button>
               </div>
-
-              <div class="contact-row" style="margin-top: 12px;">
+              <div class="contact-row">
                 <div>
                   <p class="label">McGill</p>
-                  <p class="value">
-                    <a class="link" href="mailto:balaji.ramesh@mail.mcgill.ca">balaji.ramesh@mail.mcgill.ca</a>
-                  </p>
+                  <p class="value"><a class="link" href="mailto:balaji.ramesh@mail.mcgill.ca">balaji.ramesh@mail.mcgill.ca</a></p>
                 </div>
-                <button class="btn btn-ghost" type="button" data-copy="balaji.ramesh@mail.mcgill.ca">Copy</button>
+                <button class="btn" type="button" data-copy="balaji.ramesh@mail.mcgill.ca">Copy</button>
               </div>
-
               <p class="hint" id="copyToast" role="status" aria-live="polite" hidden>Copied!</p>
             </div>
           </div>
-        </div>
 
-        <div class="card">
-          <div class="card-header">
-            <h2 class="card-title">Links</h2>
-          </div>
-          <div class="card-body links-grid">
-            <a class="link-tile" href="https://github.com/balaji025" target="_blank" rel="noreferrer">
-              <span class="tile-top">GitHub</span>
-            </a>
-            <a class="link-tile" href="https://www.linkedin.com/in/balaji-ramesh-02bbb8180/" target="_blank" rel="noreferrer">
-              <span class="tile-top">LinkedIn</span>
-            </a>
+          <div class="card reveal" style="--i:2">
+            <div class="card-header">
+              <p class="card-kicker">Elsewhere</p>
+              <h2 class="card-title">Links</h2>
+            </div>
+            <div class="card-body links-grid">
+              <a class="link-tile" href="https://github.com/balaji025" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a class="link-tile" href="https://www.linkedin.com/in/balajiramesh2003/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a class="link-tile" href="https://scholar.google.ca/citations?user=zZrQZvwAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Scholar</a>
+              <a class="link-tile" href="https://drive.google.com/file/d/1QxqjHb9QQ8ooc-xLBoQ-mjWqP_QSmLPP/view?usp=sharing" target="_blank" rel="noopener noreferrer">CV</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
-
-    <div class="cv-center">
-      <div class="card card-glow">
-        <div class="card-header">
-          <h2 class="card-title">Curriculum Vitae</h2>
-          <p class="card-kicker">Download</p>
-        </div>
-        <div class="card-body">
-          <p class="muted">
-            A concise overview of my experience, projects, and technical skills.
-          </p>
-
-          <a class="btn" href="https://drive.google.com/file/d/1QxqjHb9QQ8ooc-xLBoQ-mjWqP_QSmLPP/view?usp=sharing" target="_blank" rel="noreferrer">
-            View CV 
-          </a>
-        </div>
-      </div>
-    </div>
-
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div class="footer-left">
-        <span class="brand-mark small">∞</span>
-        <span class="footer-text">© <span id="year"></span> Balaji Ramesh</span>
-      </div>
+      <span class="footer-text">© <span id="year"></span> Balaji Ramesh</span>
       <div class="footer-right">
-        <a class="footer-link" href="index.html">Info</a>
+        <a class="footer-link" href="index.html">Home</a>
+        <a class="footer-link" href="experience.html">Experience</a>
         <a class="footer-link" href="projects.html">Projects</a>
       </div>
     </div>
   </footer>
 </body>
 </html>
-

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Experience · Balaji Ramesh</title>
+  <meta name="description" content="Work and research experience of Balaji Ramesh." />
+  <script>
+    document.documentElement.classList.add("js");
+    try { document.documentElement.dataset.theme = localStorage.getItem("theme") === "light" ? "light" : "dark"; }
+    catch (e) { document.documentElement.dataset.theme = "dark"; }
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="data.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Balaji Ramesh — Home">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>Balaji Ramesh</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="experience.html">Experience</a>
+        <a class="nav-link" href="projects.html">Projects</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <button class="nav-chip" id="themeToggle" type="button">Light</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Experience</p>
+            <h1 class="page-title">Where I've worked</h1>
+            <p class="section-subtitle">Internships, research and teaching. Click any entry for details and links.</p>
+          </div>
+        </div>
+
+        <div class="item-list" data-list="experience"></div>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="modal" id="detailModal" aria-labelledby="modalTitle">
+    <button class="modal-close" type="button" data-close aria-label="Close">×</button>
+    <div class="modal-body"></div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="footer-text">© <span id="year"></span> Balaji Ramesh</span>
+      <div class="footer-right">
+        <a class="footer-link" href="index.html">Home</a>
+        <a class="footer-link" href="projects.html">Projects</a>
+        <a class="footer-link" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
