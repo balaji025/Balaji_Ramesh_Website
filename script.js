@@ -33,9 +33,12 @@ function initTheme() {
   const btn = $("#themeToggle");
   if (!btn) return;
 
+  const SUN = '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
+  const MOON = '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>';
+
   const label = () => {
     const dark = root.dataset.theme !== "light";
-    btn.textContent = dark ? "Light" : "Dark";
+    btn.innerHTML = `${dark ? SUN : MOON}<span class="theme-text">${dark ? "Light" : "Dark"}</span>`;
     btn.setAttribute("aria-label", `Switch to ${dark ? "light" : "dark"} mode`);
   };
   label();
@@ -104,6 +107,8 @@ function cardHTML(item, index) {
         ${meta ? `<p class="item-meta">${meta}</p>` : ""}
         ${item.summary ? `<p class="item-summary">${esc(item.summary)}</p>` : ""}
         ${tags ? `<div class="tags">${tags}</div>` : ""}
+        ${item.video ? `<button class="item-chip" type="button" data-open="${esc(item.id)}"><span aria-hidden="true">▶</span> Watch demo video</button>` : ""}
+        ${item.links?.live ? `<a class="item-chip" href="${esc(item.links.live)}" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">↗</span> Live site</a>` : ""}
       </div>
       <span class="item-cta" aria-hidden="true">Details <span class="arrow">→</span></span>
     </article>`;
@@ -139,10 +144,20 @@ function initModal() {
         `<a class="btn ${i === 0 ? "btn-accent" : ""}" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(LINK_LABELS[k] || k)} <span aria-hidden="true">↗</span></a>`)
       .join("");
 
+    const v = item.video;
+    const video = v ? `
+      <figure class="modal-media">
+        <video controls playsinline preload="metadata"${v.poster ? ` poster="${esc(v.poster)}"` : ""}>
+          <source src="${esc(v.src)}" type="video/mp4" />
+        </video>
+        ${v.caption ? `<figcaption>${esc(v.caption)}</figcaption>` : ""}
+      </figure>` : "";
+
     body.innerHTML = `
       ${item.kicker ? `<p class="card-kicker">${esc(item.kicker)}</p>` : ""}
       <h2 class="modal-title" id="modalTitle">${esc(item.title)}</h2>
       ${meta ? `<p class="item-meta">${meta}</p>` : ""}
+      ${video}
       <div class="modal-text">${paras}${bullets}</div>
       ${tags ? `<div class="tags">${tags}</div>` : ""}
       ${links ? `<div class="modal-links">${links}</div>` : ""}`;
@@ -153,6 +168,7 @@ function initModal() {
   }
 
   function close() {
+    $$("video", dialog).forEach(v => v.pause());
     dialog.classList.add("is-closing");
     const done = () => {
       dialog.classList.remove("is-closing");

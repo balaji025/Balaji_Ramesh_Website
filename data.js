@@ -28,9 +28,10 @@ window.PORTFOLIO = {
       period: "May 2026 – Sept. 2026",
       location: "Montreal, QC",
       kicker: "Internship · Data Science",
-      summary: "Built an ETL, embedding and knowledge-graph pipeline over 28K+ bilingual records for LLM-powered search.",
+      summary: "Built an LLM-powered recommender system for Praxis, backed by an ETL, embedding and knowledge-graph pipeline over 28K+ bilingual records.",
       description: [
-        "Built the data foundation for an LLM-powered retrieval system: ingesting and validating multi-source data, embedding bilingual text for vector search, and modelling the integrated data as a knowledge graph."
+        "Built a recommender system for Praxis, a bilingual knowledge-sharing platform, that suggests the notes, people and communities most relevant to a user's question.",
+        "I built its data foundation: ingesting and validating multi-source data, embedding bilingual text for vector search, and modelling the integrated data as a knowledge graph that powers GraphRAG retrieval."
       ],
       highlights: [
         "Developed a Python ETL pipeline (pandas) that ingests, cleans, joins and validates 28K+ records from eight CSV sources into curated Parquet datasets.",
@@ -41,6 +42,11 @@ window.PORTFOLIO = {
         "Removed personal information before processing and documented data structures, transformations and data-quality issues."
       ],
       tags: ["Python", "pandas", "Parquet", "FAISS", "BGE-M3", "Neo4j"],
+      video: {
+        src: "media/gradiant-demo.mp4?v=3",
+        poster: "media/gradiant-demo-poster.jpg?v=3",
+        caption: "Captioned walkthrough: what Praxis is, the En commun Discovery interface, its three search modes (Guided, Connected GraphRAG, Quick vector) and live Neo4j neighbourhood graphs."
+      },
       links: {}
     },
     {
@@ -117,7 +123,7 @@ window.PORTFOLIO = {
       tags: ["Python", "pandas", "DuckDB", "SQL", "SQLite", "Flask"],
       links: {
         github: "https://github.com/balaji025/IPL_ANALYTICS",
-        live: "https://balajiramesh2003.pythonanywhere.com/index"
+        live: "https://balajiramesh03.pythonanywhere.com/"
       }
     },
     {
@@ -170,8 +176,7 @@ window.PORTFOLIO = {
       tags: ["Python", "Cryptography", "RSA", "ASCON"],
       links: {
         github: "https://github.com/balaji025/Hybrid-Lightweight-Cryptography-for-Data-Security",
-        paper: "https://ieeexplore.ieee.org/document/10895892",
-        live: "https://balajiramesh03.pythonanywhere.com/"
+        paper: "https://ieeexplore.ieee.org/document/10895892"
       }
     },
     {
