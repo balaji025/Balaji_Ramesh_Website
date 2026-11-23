@@ -43,9 +43,9 @@ window.PORTFOLIO = {
       ],
       tags: ["Python", "pandas", "Parquet", "FAISS", "BGE-M3", "Neo4j"],
       video: {
-        src: "media/gradiant-demo.mp4?v=3",
+        src: "media/gradiant-demo-voiceover.mp4?v=1",
         poster: "media/gradiant-demo-poster.jpg?v=3",
-        caption: "Captioned walkthrough: what Praxis is, the En commun Discovery interface, its three search modes (Guided, Connected GraphRAG, Quick vector) and live Neo4j neighbourhood graphs."
+        caption: "Narrated walkthrough (turn sound on): what Praxis is, the En commun Discovery interface, its three search modes (Guided, Connected GraphRAG, Quick vector) and live Neo4j neighbourhood graphs."
       },
       links: {}
     },
